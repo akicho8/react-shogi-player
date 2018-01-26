@@ -14,7 +14,7 @@ export { Location }
 if (process.argv[1] === __filename) {
   console.log(Location.fetch("black"))
 
-  Location.values.map((e) => {
+  Location.values.forEach((e) => {
     console.log(e)
   })
 }
